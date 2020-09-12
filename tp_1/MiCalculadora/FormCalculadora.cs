@@ -19,6 +19,11 @@ namespace MiCalculadora
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Agrego los caracteres al ComboBox y hago el focus sobre el TextBoxt principal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             this.ActiveControl = txtNumero1;
@@ -28,7 +33,9 @@ namespace MiCalculadora
             cmbOperador.Items.Add("/");
 
         }
-
+        /// <summary>
+        /// Utilizado para limpiar todos los casilleros y el resultado
+        /// </summary>
         private void Limpiar()
         {
             lblResultado.Text = "";
@@ -40,12 +47,21 @@ namespace MiCalculadora
         {
 
         }
-
+        /// <summary>
+        /// El boton cerrar llama al metodo Close() cerrando el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
+        /// <summary>
+        /// Tomando el dato del resultado, validando que no este vacio llama al metodo de la clase Numero que devuelve un string
+        /// caso contrario muestra un error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             string decimales = lblResultado.Text;
@@ -62,7 +78,12 @@ namespace MiCalculadora
             }
 
         }
-
+        /// <summary>
+        /// Tomando el dato del resultado, validando que no este vacio ninguna de las entradas llama al metodo Operar que devuelve un double
+        /// caso contrario muestra un error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             string operador = cmbOperador.Text;
@@ -78,7 +99,14 @@ namespace MiCalculadora
             }
            
         }
-
+        /// <summary>
+        /// Instancia ambos numeros pasados como parametros a la Clase Numero
+        /// luego con el metodo Operar de la Calculadora retona un Double
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         private static double Operar(string numero1,string numero2, string operador)
         {
             Numero num1 = new Numero(numero1);
@@ -86,7 +114,12 @@ namespace MiCalculadora
 
             return Calculadora.Operar(num1, num2, operador);
         }
-
+        /// <summary>
+        /// Tomando el dato del resultado, validando que no este vacio llama al metodo de la clase Numero que devuelve un string
+        /// caso contrario muestra un error
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             string binarios = lblResultado.Text;
@@ -103,7 +136,11 @@ namespace MiCalculadora
             }
 
         }
-
+        /// <summary>
+        /// El boton "btnLimpiar" llama al metodo Limpiar() que limpia todos los casilleros y el Label de resultado
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
