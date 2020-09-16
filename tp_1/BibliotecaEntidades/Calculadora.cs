@@ -18,7 +18,7 @@ namespace BibliotecaEntidades
         public static double Operar(Numero num1, Numero num2, string operador)
         {
             double res = 0;
-            string op = ValidarOperador(Convert.ToChar(operador));
+            string op = ValidarOperador(Convert.ToChar(operador[0]));
             switch (op)
             {
                 case "+":
