@@ -11,3 +11,16 @@ G:\C#_WORKPLACE\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInp
 G:\C#_WORKPLACE\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
 G:\C#_WORKPLACE\tp_1\MiCalculadora\obj\Debug\MiCalculadora.exe
 G:\C#_WORKPLACE\tp_1\MiCalculadora\obj\Debug\MiCalculadora.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\bin\Debug\MiCalculadora.exe
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\bin\Debug\MiCalculadora.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\bin\Debug\BibliotecaEntidades.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\bin\Debug\BibliotecaEntidades.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.exe
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\MiCalculadora\obj\Debug\MiCalculadora.pdb
