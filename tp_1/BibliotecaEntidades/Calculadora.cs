@@ -15,22 +15,22 @@ namespace BibliotecaEntidades
         /// <param name="num2"></param>
         /// <param name="operador"></param>
         /// <returns></returns>
-        public static double Operar(Numero num1, Numero num2, string operador)
+        public static double Operar(Numero num1, Numero num2, char operador)
         {
             double res = 0;
-            string op = ValidarOperador(Convert.ToChar(operador[0]));
-            switch (op)
+            
+            switch (operador)
             {
-                case "+":
+                case '+':
                     res = num1 + num2;
                     break;
-                case "-":
+                case '-':
                     res = num1 - num2;
                     break;
-                case "*":
+                case '*':
                     res = num1 * num2;
                     break;
-                case "/":
+                case '/':
                     res = num1 / num2;
                     break;
             }

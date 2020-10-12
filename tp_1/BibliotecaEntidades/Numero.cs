@@ -23,7 +23,7 @@ namespace BibliotecaEntidades
         /// <param name="numero"></param>
         public Numero(double numero)
         {
-            SetNumero = numero.ToString();
+            this.SetNumero = numero.ToString();
         }
         /// <summary>
         /// Utiliza la prop Set numero para settear por parametro
@@ -31,13 +31,13 @@ namespace BibliotecaEntidades
         /// <param name="numero"></param>
         public Numero(string strNumero)
         {
-            SetNumero = strNumero;
+            this.SetNumero = strNumero;
         }
         /// <summary>
         ///  Setter, validado el Value settea el dato
         /// </summary>
         #region propiedades
-        public string SetNumero
+        private string SetNumero
         {
             set
             {
@@ -58,9 +58,9 @@ namespace BibliotecaEntidades
             bool ok = false;
             for (int i = 0; i < cadenaNumeros.Length; i++)
             {
-                if (cadenaNumeros[i] >= '0' && cadenaNumeros[i] <= '9')
+                if (!(cadenaNumeros[i] >= '0' && cadenaNumeros[i] <= '9'))
                 {
-                    ok = true;
+                    ok = false;
                 }
             }
 
@@ -92,18 +92,9 @@ namespace BibliotecaEntidades
                 else
                 {
                     ok = false;
-                    break;
                 }
             }
-
-            if (ok)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return ok;
         }
 
         #endregion

@@ -26,6 +26,7 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            Limpiar();
             this.ActiveControl = txtNumero1;
             cmbOperador.Items.Add("+");
             cmbOperador.Items.Add("-");
@@ -54,7 +55,11 @@ namespace MiCalculadora
         /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dialogResult = MessageBox.Show($"Esta seguro de salir?", "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
         /// <summary>
         /// Tomando el dato del resultado, validando que no este vacio llama al metodo de la clase Numero que devuelve un string
@@ -109,10 +114,11 @@ namespace MiCalculadora
         /// <returns></returns>
         private static double Operar(string numero1,string numero2, string operador)
         {
+
             Numero num1 = new Numero(numero1);
             Numero num2 = new Numero(numero2);
 
-            return Calculadora.Operar(num1, num2, operador);
+            return Calculadora.Operar(num1, num2, operador[0]);
         }
         /// <summary>
         /// Tomando el dato del resultado, validando que no este vacio llama al metodo de la clase Numero que devuelve un string

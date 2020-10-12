@@ -142,6 +142,8 @@
             this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.txtNumero1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormCalculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de Franco Garancini del curso 2°C";
