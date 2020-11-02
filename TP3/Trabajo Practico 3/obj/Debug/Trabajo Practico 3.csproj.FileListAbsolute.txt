@@ -1,0 +1,16 @@
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\obj\Debug\Trabajo Practico 3.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\obj\Debug\Trabajo Practico 3.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Trabajo Practico 3.exe.config
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Trabajo Practico 3.exe
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Trabajo Practico 3.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\ClasesAbstractas.dll
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\ClasesInstanciables.dll
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Excepciones_test.dll
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\ClasesAbstractas.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\ClasesInstanciables.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\bin\Debug\Excepciones_test.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\obj\Debug\Trabajo Practico 3.csproj.CopyComplete
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\obj\Debug\Trabajo Practico 3.exe
+C:\Users\FrancoGollo\source\repos\TP3\Trabajo Practico 3\obj\Debug\Trabajo Practico 3.pdb

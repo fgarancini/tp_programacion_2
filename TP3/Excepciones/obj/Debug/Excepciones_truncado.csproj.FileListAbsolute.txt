@@ -1,0 +1,2 @@
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones\obj\Debug\Excepciones_truncado.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones\obj\Debug\Excepciones_truncado.csproj.CoreCompileInputs.cache
