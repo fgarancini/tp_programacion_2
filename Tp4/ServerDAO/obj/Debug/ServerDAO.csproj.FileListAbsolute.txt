@@ -1,0 +1,13 @@
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\ServerDAO.dll
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\ServerDAO.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Entidades.dll
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Excepciones.dll
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Entidades.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\bin\Debug\Excepciones.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\obj\Debug\ServerDAO.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\obj\Debug\ServerDAO.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\obj\Debug\ServerDAO.csproj.CopyComplete
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\obj\Debug\ServerDAO.dll
+C:\Users\FrancoGollo\source\repos\Tp4\ServerDAO\obj\Debug\ServerDAO.pdb

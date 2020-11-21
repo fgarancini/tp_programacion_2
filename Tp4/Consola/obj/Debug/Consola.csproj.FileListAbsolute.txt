@@ -1,0 +1,16 @@
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Consola.exe.config
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Consola.exe
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Consola.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Entidades.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Entidades.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\obj\Debug\Consola.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\obj\Debug\Consola.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\obj\Debug\Consola.csproj.CopyComplete
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\obj\Debug\Consola.exe
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\obj\Debug\Consola.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Excepciones.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Excepciones.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\ServerDAO.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Consola\bin\Debug\ServerDAO.pdb
