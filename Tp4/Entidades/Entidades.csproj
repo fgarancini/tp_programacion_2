@@ -46,7 +46,6 @@
     <Compile Include="Barbaro.cs" />
     <Compile Include="Druida.cs" />
     <Compile Include="Hechicera.cs" />
-    <Compile Include="IEventos.cs" />
     <Compile Include="IAcciones.cs" />
     <Compile Include="Nigromante.cs" />
     <Compile Include="Paladin.cs" />

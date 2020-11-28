@@ -83,7 +83,7 @@
             this.btnIniciaSesion.UseVisualStyleBackColor = true;
             this.btnIniciaSesion.Click += new System.EventHandler(this.btnIniciaSesion_Click);
             // 
-            // UsuarioSingUp
+            // IngresoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +95,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "UsuarioSingUp";
+            this.Name = "IngresoForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido al Diablo II";
             this.Load += new System.EventHandler(this.UsuarioSingUp_Load);

@@ -21,7 +21,7 @@ namespace DiabloIIForm
     {
         //Instancia de las clases necesarias
         private Server Server;
-        private Usuario<Personaje> jugador;
+        private Usuario jugador;
         private Personaje personajeElegido;
         private SqlServer sqlServer;
         //Instancia de los hilos y delegados
@@ -36,7 +36,7 @@ namespace DiabloIIForm
         /// <param name="serverDiablo"></param>
         /// <param name="usuario"></param>
         /// <param name="personaje"></param>
-        public Diablo2(Server serverDiablo, Usuario<Personaje> usuario, Personaje personaje)
+        public Diablo2(Server serverDiablo, Usuario usuario, Personaje personaje)
         {
             InitializeComponent();
 
@@ -266,12 +266,23 @@ namespace DiabloIIForm
             sqlServer.InsertarDatos(Server, jugador, personajeElegido);
             this.Lista();
         }
+        /// <summary>
+        /// Elimina todas las instancias del personaje seleccionado.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEliminarDato_Click(object sender, EventArgs e)
         {
-            sqlServer.EliminarPersonaje(personajeElegido.Nombre);
+            string cadena = this.listboxPersonajes.SelectedItem.ToString();
+            string[] datos = cadena.Split('|');
+            sqlServer.EliminarPersonaje(datos[0]);
             this.Lista();
         }
-
+        /// <summary>
+        /// Al cerrar el form se cierran los hilos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Diablo2_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.hilo.Abort();
@@ -285,15 +296,21 @@ namespace DiabloIIForm
             this.Server.GuardarTexto();
         }
 
-        public void SerializarInfoDelServer()
+        public void SerializarInfoDelServer(bool aux)
         {
-            MessageBox.Show("Serializado");
+            if (aux)
+            {
+                MessageBox.Show("Serializado"); 
+            }
         }
 
         
-        public void GuardarArchivoDeTexto()
+        public void GuardarArchivoDeTexto(bool aux)
         {
-            MessageBox.Show("Guardado como texto");
+            if (aux)
+            {
+                MessageBox.Show("Guardado como texto"); 
+            }
         }
 
         

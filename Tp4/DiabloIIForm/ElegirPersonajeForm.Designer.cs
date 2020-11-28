@@ -204,6 +204,7 @@
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ElegirPersonajeForm";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "[Diablo 2]  Elije tu personaje...";
             this.Load += new System.EventHandler(this.ElegirPersonajeForm_Load);

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Entidades.Amazona">
     <Position X="7.25" Y="4" Width="1.5" />
     <TypeIdentifier>
@@ -50,7 +50,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Personaje">
-    <Position X="1" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="2" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -72,44 +72,37 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Server">
-    <Position X="13" Y="3.75" Width="3" />
+    <Position X="17.5" Y="3.75" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACCEQAEAgAAAAAAAAAAAAAACEAAAAmA=</HashCode>
       <FileName>Server.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Entidades.Usuario&lt;TPersonaje&gt;">
-    <Position X="11" Y="1.5" Width="1.5" />
+  <Class Name="Entidades.Usuario">
+    <Position X="11" Y="1.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACESAAAgAAACAAAAAgCBAAIAgAAAiA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="Entidades.IAcciones&lt;T&gt;">
-    <Position X="16.5" Y="1.75" Width="1.5" />
+    <Position X="17.5" Y="2.25" Width="4.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IAcciones.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Entidades.IEventos" Collapsed="true">
-    <Position X="18.25" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IEventos.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Delegate Name="Entidades.GenerarArchivo">
-    <Position X="16.25" Y="4.75" Width="2" />
+    <Position X="20.75" Y="4.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Server.cs</FileName>
     </TypeIdentifier>
   </Delegate>
   <Delegate Name="Entidades.GenerarArchivoDeTexto">
-    <Position X="16.25" Y="3.75" Width="2" />
+    <Position X="20.75" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Server.cs</FileName>
     </TypeIdentifier>
   </Delegate>

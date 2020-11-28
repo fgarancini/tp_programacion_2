@@ -10,6 +10,7 @@ namespace Entidades
     {
         public Druida(int nivel, string nombre, EReino eReino) : base(nombre, nivel, EClase.Druida, eReino)
         {
+            this.StatsPersonaje(base.Nivel);
 
         }
         public Druida()
@@ -26,12 +27,12 @@ namespace Entidades
 
         public override void StatsPersonaje(int nivel)
         {
-            this.Fuerza = 15 + (2 * nivel);
-            this.Destreza = 20 + (2 * nivel);
-            this.Vitalidad = 25 + (2 * nivel);
-            this.Energia = 20 + (2 * nivel);
-            this.Mana = (int)((int)20 + (this.Energia * 1.5) + (1.5 * nivel / nivel));
-            this.Vida = this.Vitalidad * 3;
+            base.Fuerza = 15 + (2 * nivel);
+            base.Destreza = 20 + (2 * nivel);
+            base.Vitalidad = 25 + (2 * nivel);
+            base.Energia = 20 + (2 * nivel);
+            base.Mana = (int)((int)20 + (this.Energia * 1.5) + (1.5 * nivel / nivel));
+            base.Vida = this.Vitalidad * 3;
         }
     }
 }

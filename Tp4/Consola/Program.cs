@@ -14,8 +14,8 @@ namespace Consola
         static void Main(string[] args)
         {
             Server server = new Server("UTNFRA");
-            Usuario<Personaje> usuario = new Usuario<Personaje>("Franco123","nisman94");
-            Usuario<Personaje> usuario2 = new Usuario<Personaje>("ReyDeLcHipI","nisman94");
+            Usuario usuario = new Usuario("Franco123","nisman94");
+            Usuario usuario2 = new Usuario("ReyDeLcHipI","nisman94");
             Asesina asesina = new Asesina(25, "Rayito", Personaje.EReino.Normal);
             Barbaro barbaro = new Barbaro(9, "Alijo", Personaje.EReino.Normal);
             Amazona amazona = new Amazona(99, "Javazon", Personaje.EReino.Infierno);
@@ -25,6 +25,8 @@ namespace Consola
             usuario2.AgregarPersonaje(barbaro);
             usuario.AgregarPersonaje(paladin);
             usuario.AgregarPersonaje(amazona);
+
+
             _ = server + usuario;
             _ = server + usuario2;
 
@@ -61,6 +63,13 @@ namespace Consola
             Console.WriteLine(usuario.DatosCompletos());
             Console.WriteLine(usuario2.DatosCompletos());
 
+            foreach (Usuario usuario1 in server.Usuarios)
+            {
+                foreach (Personaje personaje in usuario1.Personajes)
+                {
+
+                }
+            }
             //Console.WriteLine("No se pudo agregar");
 
             Console.ReadKey();

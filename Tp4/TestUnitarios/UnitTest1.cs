@@ -14,7 +14,7 @@ namespace TestUnitarios
         [ExpectedException(typeof(PersonajeYaExisteException))]
         public void AgregarPersonajeTest()
         {
-            Usuario<Personaje> usuario = new Usuario<Personaje>("D2","123456");
+            Usuario usuario = new Usuario("D2","123456");
             Amazona amazona = new Amazona(99,"Amazona",Personaje.EReino.Infierno);
             Asesina asesina = new Asesina(99,"Amazona",Personaje.EReino.Infierno);
             _ = usuario + amazona;
@@ -34,8 +34,8 @@ namespace TestUnitarios
         public void AgregarCuenta()
         {
             Server server = new Server("UTNFRA");
-            Usuario<Personaje> usuario = new Usuario<Personaje>("D2", "123456");
-            Usuario<Personaje> usuario2 = new Usuario<Personaje>("D2", "123456");
+            Usuario usuario = new Usuario("D2", "123456");
+            Usuario usuario2 = new Usuario("D2", "123456");
 
             _ = server + usuario;
             _ = server + usuario2;
@@ -44,7 +44,7 @@ namespace TestUnitarios
 
         public void UsuariosNotNull()
         {
-            Usuario<Personaje> usuario = new Usuario<Personaje>("D2", "123456");
+            Usuario usuario = new Usuario("D2", "123456");
             Amazona amazona = new Amazona(99, "Amazona", Personaje.EReino.Infierno);
             Asesina asesina = new Asesina(99, "Asesina", Personaje.EReino.Infierno);
 
@@ -73,7 +73,7 @@ namespace TestUnitarios
             {
                 Server server = new Server("UTNFRA");
 
-                Usuario<Personaje> usuario = new Usuario<Personaje>("D2", "123456");
+                Usuario usuario = new Usuario("D2", "123456");
 
                 Amazona amazona = new Amazona(99, "Amazona", Personaje.EReino.Infierno);
                 Asesina asesina = new Asesina(99, "Asesina", Personaje.EReino.Infierno);

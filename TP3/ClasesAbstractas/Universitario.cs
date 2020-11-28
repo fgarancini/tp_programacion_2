@@ -33,7 +33,7 @@ namespace EntidadesAbstractas
 
         public static bool operator ==(Universitario universitario1,Universitario universitario2)
         {
-            return (universitario1.GetType() == universitario2.GetType() && universitario1.legajo == universitario2.legajo);
+            return ((universitario1.DNI == universitario2.DNI || universitario1.legajo == universitario2.legajo) && universitario1.Equals(universitario2));
         }
         public static bool operator !=(Universitario universitario1, Universitario universitario2)
         {

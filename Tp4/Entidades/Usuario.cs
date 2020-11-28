@@ -7,26 +7,21 @@ using Excepciones;
 using Archivos;
 namespace Entidades
 {
-
-    public class Usuario<TPersonaje> where TPersonaje : Personaje
+    public class Usuario
     {
         private string nombre;
         private string password;
-        private List<TPersonaje> personajes;
+        private List<Personaje> personajes;
 
-        #region Constructores
         public Usuario()
         {
-            this.personajes = new List<TPersonaje>();
+            this.personajes = new List<Personaje>();
         }
         public Usuario(string nombre, string password) : this()
         {
             this.Nombre = nombre;
             this.Password = password;
-        } 
-        #endregion
-
-        #region Propiedades
+        }
         public Personaje this[int i]
         {
             get
@@ -36,10 +31,10 @@ namespace Entidades
             }
             set
             {
-                this.personajes[i] = (TPersonaje)value;
+                this.personajes[i] = value;
             }
         }
-        public List<TPersonaje> Personajes
+        public List<Personaje> Personajes
         {
             get
             {
@@ -84,7 +79,7 @@ namespace Entidades
                 }
             }
         }
-        #endregion
+
 
         #region Metodos
         public override string ToString()
@@ -96,7 +91,7 @@ namespace Entidades
             return datosUsuario.ToString();
         }
 
-        public bool AgregarPersonaje(TPersonaje obj)
+        public bool AgregarPersonaje(Personaje obj)
         {
             return this + obj;
         }
@@ -119,16 +114,16 @@ namespace Entidades
         #endregion
 
         #region Sobrecarga de Operadores
-        public static bool operator ==(Usuario<TPersonaje> usuario, Usuario<TPersonaje> usuario1)
+        public static bool operator ==(Usuario usuario, Usuario usuario1)
         {
             return (usuario.nombre == usuario1.nombre);
         }
-        public static bool operator !=(Usuario<TPersonaje> usuario, Usuario<TPersonaje> usuario1)
+        public static bool operator !=(Usuario usuario, Usuario usuario1)
         {
             return !(usuario == usuario1);
         }
 
-        public static bool operator ==(Usuario<TPersonaje> usuario, TPersonaje personaje)
+        public static bool operator ==(Usuario usuario, Personaje personaje)
         {
             bool aux = false;
             foreach (Personaje item in usuario.Personajes)
@@ -142,11 +137,11 @@ namespace Entidades
             return aux;
         }
 
-        public static bool operator !=(Usuario<TPersonaje> usuario, TPersonaje personaje)
+        public static bool operator !=(Usuario usuario, Personaje personaje)
         {
             return !(usuario == personaje);
         }
-        public static bool operator +(Usuario<TPersonaje> usuario, TPersonaje personaje)
+        public static bool operator +(Usuario usuario, Personaje personaje)
         {
             bool aux = false;
             if (usuario != personaje)
@@ -160,7 +155,7 @@ namespace Entidades
 
             }
             return aux;
-        } 
+        }
         #endregion
     }
 }

@@ -17,10 +17,10 @@ namespace DiabloIIForm
     {
         private Personaje.EClase clase;
         private Personaje personaje;
-        private Usuario<Personaje> usuario1;
+        private Usuario usuario1;
         public Server server1;
         private bool ok;
-        public ElegirPersonajeForm(Server server,Usuario<Personaje> usuario)
+        public ElegirPersonajeForm(Server server,Usuario usuario)
         {
             InitializeComponent();
             cmbClases.DataSource = Enum.GetValues(typeof(Personaje.EClase));

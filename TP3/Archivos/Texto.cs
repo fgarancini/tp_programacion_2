@@ -12,31 +12,37 @@ namespace Archivos
     {
         public bool Guardar(string archivo, string datos)
         {
+            StreamWriter writer = new StreamWriter(archivo);
             try
             {
-                StreamWriter writer = new StreamWriter(archivo);
                 writer.Write(datos);
-                writer.Close();
                 return true;
             }
             catch (Exception ex)
             {
                 throw new ArchivosException(ex);
+            }
+            finally
+            {
+                writer.Close();
             }
         }
 
         public bool Leer(string archivo, out string datos)
         {
+            StreamReader streamReader = new StreamReader(archivo);
             try
             {
-                StreamReader streamReader = new StreamReader(archivo);
                 datos = streamReader.ReadToEnd();
-                streamReader.Close();
                 return true;
             }
             catch (Exception ex)
             {
                 throw new ArchivosException(ex);
+            }
+            finally
+            {
+                streamReader.Close();
             }
         }
 

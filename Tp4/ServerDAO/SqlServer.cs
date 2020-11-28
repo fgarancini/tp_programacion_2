@@ -25,7 +25,7 @@ namespace ServerDAO
         /// <param name="server"></param>
         /// <param name="usuario"></param>
         /// <param name="personaje"></param>
-        public void InsertarDatos(Server server,Usuario<Personaje> usuario,Personaje personaje)
+        public void InsertarDatos(Server server,Usuario usuario,Personaje personaje)
         {
             string command = "INSERT INTO ServerInfo(NombreServer,FechaCreacion) VALUES(@nombreServer,@fechaCreacion) INSERT INTO Usuarios(Usuario,Password) VALUES(@usuario, @password) INSERT INTO Personajes(Nombre,Clase,Reino,Nivel,Descripcion) VALUES(@nombre, @clase, @reino, @nivel, @descripcion)";
             try
@@ -57,9 +57,9 @@ namespace ServerDAO
                     }
                 }
             }
-            catch(Exception ex)
+            catch(ErrorAlConectarException ex)
             {
-                Console.WriteLine("21/10 to be continued...");
+                Console.WriteLine(ex.Message);
             }
             finally
             {
@@ -71,12 +71,20 @@ namespace ServerDAO
         }
         public void EliminarPersonaje(string nombre)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(this.connectionString))
+            try
             {
-                sqlConnection.Open();
-                string command = $"DELETE FROM Personajes WHERE Nombre='{nombre}' ";
-                SqlCommand sqlCommand = new SqlCommand(command, sqlConnection);
-                sqlCommand.ExecuteNonQuery();
+                using (SqlConnection sqlConnection = new SqlConnection(this.connectionString))
+                {
+                    sqlConnection.Open();
+                    string command = $"DELETE FROM Personajes WHERE Nombre='{nombre}' ";
+                    SqlCommand sqlCommand = new SqlCommand(command, sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                }
+            }
+            catch (ErrorAlConectarException ex)
+            {
+
+                Console.WriteLine(ex.Message);
             }
         }
         public List<Personaje> Listar()
@@ -156,7 +164,7 @@ namespace ServerDAO
                     return personajes;
                 }
             }
-            catch (Exception ex)
+            catch (ErrorAlConectarException ex)
             {
 
                 throw new ErrorAlConectarException(ex);

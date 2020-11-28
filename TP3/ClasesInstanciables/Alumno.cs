@@ -73,7 +73,7 @@ namespace ClasesInstanciables
 
         public static bool operator ==(Alumno alumno,Universidad.EClases clases)
         {
-            return (alumno.estadoCuenta != EEstadoCuenta.Deudor && alumno.claseQueToma == clases);
+            return (alumno.estadoCuenta != EEstadoCuenta.Deudor && alumno != clases);
         }
         public static bool operator !=(Alumno alumno, Universidad.EClases clases)
         {

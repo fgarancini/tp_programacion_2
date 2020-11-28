@@ -47,8 +47,8 @@ namespace ClasesInstanciables
         public static bool Guardar(Jornada jornada)
         {
             Texto texto = new Texto();
-            string path = AppDomain.CurrentDomain.BaseDirectory + "Jornada.txt";
-            return texto.Guardar(path, jornada.ToString());
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "Jornada.txt";
+            return texto.Guardar(ruta, jornada.ToString());
         }
         public static string Leer()
         {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Serialization;
 using Excepciones;
+using System.Xml;
 
 namespace Archivos
 {
@@ -13,12 +14,11 @@ namespace Archivos
     {
         public bool Guardar(string archivo, T datos)
         {
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            XmlTextWriter writer = new XmlTextWriter(archivo, Encoding.UTF8);
             try
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(T));
-                StreamWriter guardar = new StreamWriter(archivo);
-                serializer.Serialize(guardar, datos);
-                guardar.Close();
+                serializer.Serialize(writer, datos);
                 return true;
                 
             }
@@ -27,22 +27,29 @@ namespace Archivos
 
                 throw new ArchivosException(ex);
             }
+            finally
+            {
+                writer.Close();
+            }
         }
 
         public bool Leer(string archivo, out T datos)
         {
+            XmlTextReader reader = new XmlTextReader(archivo);
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
             try
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(T));
-                StreamReader leer = new StreamReader(archivo);
-                datos = (T)serializer.Deserialize(leer);
-                leer.Close();
+                datos = (T)serializer.Deserialize(reader);
                 return true;
             }
             catch (Exception ex)
             {
 
                 throw new ArchivosException(ex);
+            }
+            finally
+            {
+                reader.Close();
             }
         }
     }

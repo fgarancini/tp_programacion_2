@@ -10,6 +10,7 @@ namespace Entidades
     {
         public Nigromante(int nivel, string nombre, EReino eReino) : base(nombre, nivel, EClase.Nigromante, eReino)
         {
+            this.StatsPersonaje(base.Nivel);
 
         }
         public Nigromante()
@@ -26,12 +27,12 @@ namespace Entidades
 
         public override void StatsPersonaje(int nivel)
         {
-            this.Fuerza = 15 + (2 * nivel);
-            this.Destreza = 25 + (2 * nivel);
-            this.Vitalidad = 15 + (2 * nivel);
-            this.Energia = 25 + (2 * nivel);
-            this.Mana = (int)((int)15 + (this.Energia * 1.5)) + (2 * nivel / nivel);
-            this.Vida = this.Vitalidad * 3;
+            base.Fuerza = 15 + (2 * nivel);
+            base.Destreza = 25 + (2 * nivel);
+            base.Vitalidad = 15 + (2 * nivel);
+            base.Energia = 25 + (2 * nivel);
+            base.Mana = (int)((int)15 + (this.Energia * 1.5)) + (2 * nivel / nivel);
+            base.Vida = this.Vitalidad * 3;
         }
     }
 }

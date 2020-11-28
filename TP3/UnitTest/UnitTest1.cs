@@ -57,18 +57,7 @@ namespace UnitTest
             universidad += Universidad.EClases.Laboratorio;
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(AlumnoRepetidoException))]
-
-        public void TestAlumnoRepetido()
-        {
-            Universidad universidad = new Universidad();
-            Alumno alumno = new Alumno(5, "nombre_1", "apellido_1", "38548745", Persona.ENacionalidad.Argentino, Universidad.EClases.Laboratorio);
-            Alumno alumno2 = new Alumno(6, "nombre_1", "apellido_1", "38548745", Persona.ENacionalidad.Argentino, Universidad.EClases.Laboratorio);
-
-            universidad += alumno;
-            universidad += alumno2;
-        }
+        
         [TestMethod]
         [ExpectedException(typeof(ArchivosException))]
         public void TestArchivo()

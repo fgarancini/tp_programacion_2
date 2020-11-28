@@ -19,7 +19,7 @@ namespace DiabloIIForm
 
         #region Atributos
         private Server server;
-        private Usuario<Personaje> usuario;
+        private Usuario usuario;
         private string nombre;
         private string contraseña;
         #endregion
@@ -38,7 +38,7 @@ namespace DiabloIIForm
             }
         }
 
-        public Usuario<Personaje> Usuario
+        public Usuario Usuario
         {
             get
             {
@@ -75,7 +75,7 @@ namespace DiabloIIForm
             {
                 if (btnIniciaSesion.DialogResult == DialogResult.OK && nombre.Length > 0 && contraseña.Length > 0)
                 {
-                    usuario = new Usuario<Personaje>(nombre, contraseña);
+                    usuario = new Usuario(nombre, contraseña);
                     up = this.Server + usuario;
 
                     if (up)

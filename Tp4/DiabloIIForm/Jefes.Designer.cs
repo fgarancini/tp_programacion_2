@@ -54,6 +54,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Jefes";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Jefes";
             this.Load += new System.EventHandler(this.Jefes_Load);

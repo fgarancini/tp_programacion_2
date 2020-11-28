@@ -10,7 +10,7 @@ namespace Entidades
     {
         public Amazona(int nivel, string nombre, EReino eReino) : base(nombre,nivel, EClase.Amazona, eReino)
         {
-
+            this.StatsPersonaje(base.Nivel);
         }
         public Amazona()
         {
@@ -27,12 +27,12 @@ namespace Entidades
 
         public override void StatsPersonaje(int nivel)
         {
-            this.Fuerza = 20 + (2 * nivel);
-            this.Destreza = 25 + (2 * nivel);
-            this.Vitalidad = 20 + (2 * nivel);
-            this.Energia = 15 + (2 * nivel);
-            this.Mana = (int)((int)15 + (this.Energia * 1.5) + (1.5 * nivel));
-            this.Vida = this.Vitalidad * 3;
+            base.Fuerza = 20 + (2 * nivel);
+            base.Destreza = 25 + (2 * nivel);
+            base.Vitalidad = 20 + (2 * nivel);
+            base.Energia = 15 + (2 * nivel);
+            base.Mana = (int)((int)15 + (this.Energia * 1.5) + (1.5 * nivel));
+            base.Vida = this.Vitalidad * 3;
         }
     }
 }

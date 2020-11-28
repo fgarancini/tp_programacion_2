@@ -7,19 +7,19 @@ using Archivos;
 using Excepciones;
 namespace Entidades
 {
-    public delegate void GenerarArchivo();
-    public delegate void GenerarArchivoDeTexto();
+    public delegate void GenerarArchivo(bool aux);
+    public delegate void GenerarArchivoDeTexto(bool aux);
     public class Server 
     {
         public event GenerarArchivo GenerarArchivo;
         public event GenerarArchivoDeTexto GenerarArchivoTxt;
-        private List<Usuario<Personaje>> usuarios;
+        private List<Usuario> usuarios;
         private string nombre;
 
         #region Constructores
         public Server()
         {
-            this.usuarios = new List<Usuario<Personaje>>();
+            this.usuarios = new List<Usuario>();
         } 
         public Server(string nombre) : this()
         {
@@ -28,7 +28,7 @@ namespace Entidades
         #endregion
 
         #region Propiedades
-        public List<Usuario<Personaje>> Usuarios
+        public List<Usuario> Usuarios
         {
             get
             {
@@ -59,6 +59,9 @@ namespace Entidades
 
             return datosServer.ToString();
         }
+        /// <summary>
+        ///             EVENTOS Y DELEGADOS
+        /// </summary>
         public void GuardarTexto()
         {
             if (this.GenerarArchivoTxt != null)
@@ -67,7 +70,7 @@ namespace Entidades
                 StringBuilder append = new StringBuilder();
                 append.AppendLine($"Server:{this.nombre}");
                 append.AppendLine($"<----------------->");
-                foreach (Usuario<Personaje> usuario in this.Usuarios)
+                foreach (Usuario usuario in this.Usuarios)
                 {
                     append.AppendLine($"Usuario: {usuario.Nombre}");
                     foreach (Personaje personaje in usuario.Personajes)
@@ -75,28 +78,27 @@ namespace Entidades
                         append.AppendLine(personaje.ToString());
                     }
                 }
-                texto.Guardar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "Info.txt", append.ToString());
-                this.GenerarArchivoTxt.Invoke();
+                this.GenerarArchivoTxt.Invoke(texto.Guardar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "Info.txt", append.ToString()));
             }
         }
+        /// <summary>
+        ///             EVENTOS Y DELEGADOS
+        /// </summary>
         public void Serializar()
         {
+            Xml<Server> xml = new Xml<Server>();
             if (this.GenerarArchivo != null)
             {
-                Xml<Server> xml = new Xml<Server>();
-                if (xml.Guardar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "infoServer.xml", this))
-                {
-                    this.GenerarArchivo.Invoke();
-                }
+                this.GenerarArchivo.Invoke(xml.Guardar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "infoServer.xml", this));
             }
         }
         #endregion
 
         #region Sobrecarga de Operadores
-        public static bool operator ==(Server server, Usuario<Personaje> usuario)
+        public static bool operator ==(Server server, Usuario usuario)
         {
             bool aux = false;
-            foreach (Usuario<Personaje> item in server.usuarios)
+            foreach (Usuario item in server.usuarios)
             {
                 if (item == usuario)
                 {
@@ -106,12 +108,12 @@ namespace Entidades
             }
             return aux;
         }
-        public static bool operator !=(Server server, Usuario<Personaje> usuario)
+        public static bool operator !=(Server server, Usuario usuario)
         {
             return !(server == usuario);
         }
 
-        public static bool operator +(Server server, Usuario<Personaje> usuario)
+        public static bool operator +(Server server, Usuario usuario)
         {
             bool aux = false;
             if (server != usuario)

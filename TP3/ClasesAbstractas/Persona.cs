@@ -22,18 +22,21 @@ namespace EntidadesAbstractas
         {
 
         }
-        public Persona(string nombre,string apellido,ENacionalidad eNacionalidad)
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
             this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.Nacionalidad = eNacionalidad;
+            this.apellido = apellido;
+            this.nacionalidad = nacionalidad;
         }
-        public Persona(string nombre, string apellido, string dni, ENacionalidad eNacionalidad) : this(nombre, apellido, eNacionalidad)
+
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
+        {
+            this.DNI = dni;
+        }
+
+        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
             this.StringToDNI = dni;
-        }
-        public Persona(string nombre, string apellido,int dni, ENacionalidad eNacionalidad):this(nombre,apellido,dni.ToString(),eNacionalidad)
-        {
         }
 
         #region Propiedades

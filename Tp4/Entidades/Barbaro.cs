@@ -10,6 +10,7 @@ namespace Entidades
     {
         public Barbaro(int nivel, string nombre, EReino eReino) : base(nombre, nivel, EClase.Barbaro, eReino)
         {
+            this.StatsPersonaje(base.Nivel);
 
         }
         public Barbaro()
@@ -27,12 +28,12 @@ namespace Entidades
 
         public override void StatsPersonaje(int nivel)
         {
-            this.Fuerza = 30 + (2 * nivel);
-            this.Destreza = 20 + (2 * nivel);
-            this.Vitalidad = 25 + (2 * nivel);
-            this.Energia = 10 + (2 * nivel);
-            this.Mana = (int)((int)10 + (this.Energia * 1.5) + (1 * nivel / nivel));
-            this.Vida = this.Vitalidad * 3;
+            base.Fuerza = 30 + (2 * nivel);
+            base.Destreza = 20 + (2 * nivel);
+            base.Vitalidad = 25 + (2 * nivel);
+            base.Energia = 10 + (2 * nivel);
+            base.Mana = (int)((int)10 + (this.Energia * 1.5) + (1 * nivel / nivel));
+            base.Vida = this.Vitalidad * 3;
         }
     }
 }

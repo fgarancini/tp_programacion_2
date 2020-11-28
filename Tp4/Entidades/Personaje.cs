@@ -72,7 +72,7 @@ namespace Entidades
             }
             set 
             {
-                if (value < 99)
+                if (value <= 99)
                 {
                     this.nivel = value;  
                 }
@@ -231,6 +231,7 @@ namespace Entidades
 
             datos.AppendLine($"Nombre: {this.Nombre}");
             datos.AppendLine($"Clase: {this.Clase}");
+            datos.AppendLine($"Nivel: {this.Nivel}");
             datos.AppendLine($"Fuerza: {this.Fuerza}");
             datos.AppendLine($"Destreza: {this.Destreza}");
             datos.AppendLine($"Vitalidad: {this.Vitalidad}");
