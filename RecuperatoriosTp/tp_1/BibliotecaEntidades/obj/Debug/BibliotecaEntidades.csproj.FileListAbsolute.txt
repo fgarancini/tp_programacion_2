@@ -1,0 +1,12 @@
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\bin\Debug\BibliotecaEntidades.dll
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\bin\Debug\BibliotecaEntidades.pdb
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.csprojAssemblyReference.cache
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.csproj.CoreCompileInputs.cache
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.dll
+G:\C#_WORKPLACE\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\bin\Debug\BibliotecaEntidades.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\bin\Debug\BibliotecaEntidades.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\tp_1\BibliotecaEntidades\obj\Debug\BibliotecaEntidades.pdb

@@ -1,0 +1,6 @@
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\bin\Debug\Excepciones_test.dll
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\bin\Debug\Excepciones_test.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\obj\Debug\Excepciones_test.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\obj\Debug\Excepciones_test.dll
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\obj\Debug\Excepciones_test.pdb
+C:\Users\FrancoGollo\source\repos\TP3\Excepciones_test\obj\Debug\Excepciones_test.csprojAssemblyReference.cache

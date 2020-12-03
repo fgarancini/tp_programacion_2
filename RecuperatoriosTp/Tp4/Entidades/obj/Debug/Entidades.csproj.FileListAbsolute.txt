@@ -1,0 +1,11 @@
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Entidades.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Excepciones.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\bin\Debug\Excepciones.pdb
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\obj\Debug\Entidades.dll
+C:\Users\FrancoGollo\source\repos\Tp4\Entidades\obj\Debug\Entidades.pdb

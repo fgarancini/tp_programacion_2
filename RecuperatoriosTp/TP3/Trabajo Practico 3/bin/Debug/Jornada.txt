@@ -1,0 +1,25 @@
+JORNADA: 
+CLASE DE Laboratorio POR Nombre: Roberto 
+Apellido: Juarez 
+Nacionalidad: Argentino 
+
+Legajo: 2
+
+Clases:
+Legislacion
+
+Laboratorio
+
+
+
+Alumnos:
+Nombre: Joaquin 
+Apellido: Suarez 
+Nacionalidad: Extranjero 
+
+Legajo: 7
+
+Estado cuenta: Pagos al dia
+Toma clases de: Laboratorio
+<------------------------------------------------>
+
