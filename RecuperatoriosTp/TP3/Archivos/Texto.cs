@@ -12,9 +12,10 @@ namespace Archivos
     {
         public bool Guardar(string archivo, string datos)
         {
-            StreamWriter writer = new StreamWriter(archivo,true);
+            StreamWriter writer = null;
             try
             {
+                writer = new StreamWriter(archivo, true);
                 writer.Write(datos);
                 return true;
             }
@@ -24,15 +25,19 @@ namespace Archivos
             }
             finally
             {
-                writer.Close();
+                if (writer != null)
+                {
+                    writer.Close(); 
+                }
             }
         }
 
         public bool Leer(string archivo, out string datos)
         {
-            StreamReader streamReader = new StreamReader(archivo);
+            StreamReader streamReader =null;
             try
             {
+                streamReader = new StreamReader(archivo);
                 datos = streamReader.ReadToEnd();
                 return true;
             }
@@ -42,7 +47,10 @@ namespace Archivos
             }
             finally
             {
-                streamReader.Close();
+                if (streamReader != null)
+                {
+                    streamReader.Close(); 
+                }
             }
         }
 
