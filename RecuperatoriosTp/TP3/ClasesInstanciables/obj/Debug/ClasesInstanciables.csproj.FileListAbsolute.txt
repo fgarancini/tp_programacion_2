@@ -24,3 +24,16 @@ C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\ClasesInstanciables\obj\Debug
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CopyComplete
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\Excepciones_test.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\bin\Debug\Excepciones_test.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CopyComplete
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb

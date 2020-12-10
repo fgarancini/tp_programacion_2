@@ -23,7 +23,7 @@ namespace BibliotecaEntidades
         /// <param name="numero"></param>
         public Numero(double numero)
         {
-            this.SetNumero = numero.ToString();
+            this.numero = numero;
         }
         /// <summary>
         /// Utiliza la prop Set numero para settear por parametro
@@ -54,24 +54,9 @@ namespace BibliotecaEntidades
         /// <returns></returns>
         private static double ValidarNumero(string strNumero)
         {
-            char[] cadenaNumeros = strNumero.ToCharArray();
-            bool ok = false;
-            for (int i = 0; i < cadenaNumeros.Length; i++)
-            {
-                if (!(cadenaNumeros[i] >= '0' && cadenaNumeros[i] <= '9'))
-                {
-                    ok = false;
-                }
-            }
-
-            if (ok)
-            {
-                return double.Parse(strNumero);
-            }
-            else
-            {
-                return 0;
-            }
+            double retorno;
+            double.TryParse(strNumero, out retorno);
+            return retorno;
 
         }
         /// <summary>

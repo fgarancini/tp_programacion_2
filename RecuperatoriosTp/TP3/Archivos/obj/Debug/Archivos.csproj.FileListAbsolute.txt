@@ -16,3 +16,12 @@ C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\Archivos\obj\Debug\Archivos.c
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\Archivos\obj\Debug\Archivos.dll
 C:\Users\FrancoGollo\Desktop\tp_programacion_2\TP3\Archivos\obj\Debug\Archivos.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\bin\Debug\Excepciones_test.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\bin\Debug\Excepciones_test.pdb
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\FrancoGollo\Desktop\tp_programacion_2\RecuperatoriosTp\TP3\Archivos\obj\Debug\Archivos.pdb

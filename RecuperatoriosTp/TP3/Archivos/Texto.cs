@@ -12,7 +12,7 @@ namespace Archivos
     {
         public bool Guardar(string archivo, string datos)
         {
-            StreamWriter writer = new StreamWriter(archivo);
+            StreamWriter writer = new StreamWriter(archivo,true);
             try
             {
                 writer.Write(datos);

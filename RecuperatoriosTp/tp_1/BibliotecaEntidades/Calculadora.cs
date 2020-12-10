@@ -17,7 +17,7 @@ namespace BibliotecaEntidades
         /// <returns></returns>
         public static double Operar(Numero num1, Numero num2, char operador)
         {
-            double res = 0;
+            double res;
             
             switch (operador)
             {
@@ -32,6 +32,9 @@ namespace BibliotecaEntidades
                     break;
                 case '/':
                     res = num1 / num2;
+                    break;
+                default:
+                    res = 0;
                     break;
             }
             return res;
