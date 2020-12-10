@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,7 @@ namespace Archivos
             StreamWriter writer = null;
             try
             {
-                writer = new StreamWriter(archivo, true);
+                writer = new StreamWriter(archivo,true);
                 writer.Write(datos);
                 return true;
             }

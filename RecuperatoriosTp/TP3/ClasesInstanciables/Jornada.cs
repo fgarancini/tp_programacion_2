@@ -30,19 +30,14 @@ namespace ClasesInstanciables
         }
         public override string ToString()
         {
-            StringBuilder retorno = new StringBuilder();
-            retorno.Append("JORNADA: \n");
-            retorno.Append("CLASE DE " + this.Clases);
-            retorno.AppendLine(" POR " + this.Instructor);
-            retorno.AppendLine("Alumnos:\n");
-
-            foreach (Alumno item in this.Alumnos)
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"CLASE DE {this.Clases} POR {this.Instructor}");
+            sb.AppendLine("ALUMNOS: ");
+            foreach (Alumno alumno in this.Alumnos)
             {
-                retorno.AppendLine(item.ToString());
+                sb.AppendLine(alumno.ToString());
             }
-            retorno.AppendLine("<------------------------------------------------>");
-
-            return retorno.ToString();
+            return sb.ToString();
         }
         public static bool Guardar(Jornada jornada)
         {
@@ -53,8 +48,12 @@ namespace ClasesInstanciables
         public static string Leer()
         {
             Texto texto = new Texto();
-            if (!(texto.Leer("Jornada.txt", out string retorno)))
+            string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\" + "Jornada.txt";
+
+            if (!(texto.Leer(ruta, out string retorno)))
+            {
                 retorno = null;
+            }
             return retorno;
         }
         #region Propiedades
@@ -110,15 +109,14 @@ namespace ClasesInstanciables
         }
         public static bool operator ==(Jornada jornada,Alumno alumno)
         {
-            bool aux = false;
             foreach (Alumno item in jornada.alumnos)
             {
                 if (item == alumno)
                 {
-                    aux = true;
+                    return  true;
                 }
             }
-            return aux;
+            return false;
         }
         public static bool operator !=(Jornada jornada, Alumno alumno)
         {
